@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-image: url(lee-b-maru-170224.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100%;
+}
+
+img {
+    width: 7em;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.profile-pic {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: auto;
+    height: 225px;
+    margin: 12px;
+    padding: 12px;
+    /* background-color: rgba(137, 43, 226, 0.552);
+    border-radius: 15px; */
+    height: fit-content;
+}
+
+.child-element h3{
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-size: x-large;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.916);
+    
+}
+
+.child-element p{
+    font-size: .9rem;
+    font-size: medium;
+    text-align: center;
+    color: #ffffff;
+    margin-top: 15px;
+}
+
+.caja{
+    background-color: rgba(134, 166, 223, .7);
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 12px;
+    height: fit-content;
+}
+
+.social-media{
+    margin-top: 25px;
+}
+
+.social-media li a{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    color: #ffffff;
+}
+
+.botones li{
+    margin: 10px;
+    background-color: rgba(19, 50, 104, 0.701);
+    border-radius: 20px;
+    transition: all .3s;
+    padding: 10px 15px;
+}
+
+.botones li:hover{ background-color: rgba(19, 29, 104, 0.701);}
+
+.wallpaper{
+    margin: 15px auto;
+}
+
+.wallpaper h3 {
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+    transition: all .3s;
+}
+
+.wallpaper h3:hover { color: rgb(53, 75, 112);}
+
+/*          PLANTILLA       */
+
+.top-space{
+    grid-area: header;
+    /* background-color: rgb(53, 75, 112); */
+}
+
+.navbar{
+    grid-area: navbar;
+    /* background-color: rgb(53, 75, 112); */
+}
+
+.grid-caja {
+    grid-area: main;
+    /* background-color: rgb(53, 75, 112); */
+}
+
+.sidebar{
+    grid-area: sidebar;
+    /* background-color: rgb(53, 75, 112); */
+}
+
+.footer{
+    grid-area: footer;
+    /* background-color: rgb(53, 75, 112); */
+}
+
+/*      GRID CONTAINER      */
+
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-areas: 
+        "header"  
+        "navbar"  
+        "main"    
+        "sidebar" 
+        "footer"  ;  
+}
+
+/*      responsive tablet   */
+
+@media (min-width: 660px){
+    .grid-container{
+        grid-template:
+            "header  header header" 25px
+            "sidebar main navbar"   auto
+            "footer  footer footer" 25px / 
+             100px    auto 100px; 
+        
+    }
+}
+
+/*      responsive escritorio   */
+
+@media (min-width: 900px){
+    .grid-container{
+        grid-template:
+            "header  header header" 60px
+            "sidebar main navbar"   auto
+            "footer  footer footer" 25px / 
+             250px    auto 250px; 
+        
+    }
+    .profile-pic{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .child-element p{
+        width: 17em;
+    }
+    img{
+        width: 9em;
+    }
+}
+
