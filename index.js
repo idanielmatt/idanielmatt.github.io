@@ -27,10 +27,13 @@ function clickHandler(e) {
   if (!musicState) {
     musicState = true;
     divBaner2.style.animationPlayState = "running";
+    player.play();
   } else {
     musicState = false;
     divBaner2.style.animationPlayState = "paused";
+    player.pause();
   }
   console.log(musicState);
 }
 let musicState = false;
+
