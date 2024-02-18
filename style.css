@@ -104,7 +104,7 @@ audio{
   border-radius: 50%;
   background-color: black;
   z-index: 2;
-  left: 41%;
+  left: 37%;
   top: 80%;
   transform: rotate(90deg);
 }
@@ -112,7 +112,7 @@ audio{
 .bg-b i{
   position: absolute;
   z-index: 3;
-  left: 40%;
+  left: 37%;
   top: 92%;
   border-radius: 50%;
   animation: spotify 4s  infinite linear forwards;
@@ -312,7 +312,7 @@ i:hover{
     border-radius: 50%;
     background-color: black;
     z-index: 2;
-    left: 41%;
+    left: 37%;
     top: 80%;
     transform: rotate(90deg);
   }
@@ -336,7 +336,7 @@ i:hover{
     border-radius: 50%;
     background-color: black;
     z-index: 2;
-    left: 41%;
+    left: 37%;
     top: 83%;
     transform: rotate(90deg);
   }
