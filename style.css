@@ -2,7 +2,6 @@
 
 * {
   padding: 0;
-  margin: 0;
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
@@ -10,10 +9,12 @@
 
 html {
   height: 100%;
+  margin: 0;
   scroll-behavior: smooth;
 }
 
 body {
+  margin: 0;
   font-family: "Poppins", sans-serif;
   background: rgb(147, 58, 142);
   background: linear-gradient(
@@ -56,16 +57,15 @@ img {
   }
 }
 
-audio{
+audio {
   display: none;
 }
 
-
 @keyframes spotify {
-  from{
+  from {
     transform: rotate(0deg);
   }
-  to{
+  to {
     transform: rotate(360deg);
   }
 }
@@ -88,12 +88,12 @@ audio{
   color: rgb(255, 255, 255);
 }
 
-.bg-b{
+.bg-b {
   position: relative;
   z-index: 1;
 }
 
-#fondo{
+#fondo {
   position: absolute;
   width: 1.8rem;
   aspect-ratio: 1;
@@ -105,17 +105,17 @@ audio{
   transform: rotate(90deg);
 }
 
-.bg-b i{
+.bg-b i {
   position: absolute;
   z-index: 3;
   left: 37%;
   top: 92%;
   border-radius: 50%;
-  animation: spotify 4s  infinite linear forwards;
+  animation: spotify 4s infinite linear forwards;
   animation-play-state: paused;
 }
 
-i:hover{
+i:hover {
   animation-play-state: running;
   cursor: pointer;
 }
@@ -276,6 +276,9 @@ i:hover{
 
 .footer {
   grid-area: footer;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 /*      GRID CONTAINER      */
@@ -301,7 +304,7 @@ i:hover{
       "footer  footer footer" 25px /
       100px auto 100px;
   }
-  #fondo{
+  #fondo {
     position: absolute;
     width: 1.8rem;
     aspect-ratio: 1;
@@ -324,8 +327,8 @@ i:hover{
       "footer  footer footer" 25px /
       400px auto 400px;
   }
-  
-  #fondo{
+
+  #fondo {
     position: absolute;
     width: 1.8rem;
     aspect-ratio: 1;
@@ -352,5 +355,4 @@ i:hover{
   .social-media {
     margin-top: 5px;
   }
-  
 }
