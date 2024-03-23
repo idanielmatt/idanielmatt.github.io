@@ -268,6 +268,7 @@ i:hover {
 
 .grid-caja {
   grid-area: main;
+
 }
 
 .sidebar {
@@ -276,9 +277,7 @@ i:hover {
 
 .footer {
   grid-area: footer;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+
 }
 
 /*      GRID CONTAINER      */
@@ -324,7 +323,7 @@ i:hover {
     grid-template:
       "header  header header" 50px
       "sidebar main navbar" auto
-      "footer  footer footer" 25px /
+      "footer  footer footer" 50px /
       400px auto 400px;
   }
 
