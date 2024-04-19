@@ -32,6 +32,10 @@ body {
   height: 100vh;
 }
 
+.top-caja {
+  height: 20px;
+}
+
 img {
   width: 7em;
   border-radius: 50%;
